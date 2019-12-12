@@ -107,7 +107,7 @@ header nav ul li ul li:nth-of-type(20) {
 
 .icons:hover {
   margin-right: 56px;
-  transition-duration: 300ms;
+  transition-duration: 250ms;
 }
 
 /******************************************************************************
@@ -127,30 +127,37 @@ header nav ul li ul li:nth-of-type(20) {
 *******************************************************************************/
 h1 {
   /* Alle H1'tjes van de pagina: */
-  font-size: 1.9em;
+  font-size: 2.5em;
 }
 
-h2:first-of-type {
-  /* Eerste H2'tje van de pagina: */
-  /* BRON: https://css-tricks.com/almanac/selectors/f/first-of-type/ */
-  font-weight: 600;
-  margin: 2rem 0rem 1rem 1rem;
-}
-
-section:nth-of-type(1n+3) h2 {
-  text-align: center;
-  margin-top: 3.8rem;
+h2 {
+  font-size: 1.8125em;
+  font-weight: normal;
 }
 
 h3 {
   /* Alle H3'tjes van de pagina */
   margin: 0 auto;
   max-width: 38ch;
-  font-size: 1.000em;
+  font-size: 1.4em;
+  font-weight: normal;
 }
+
 
 section a {
   color: #19187C;
+}
+
+
+h2:first-of-type {
+  /* Eerste H2'tje van de pagina: */
+  /* BRON: https://css-tricks.com/almanac/selectors/f/first-of-type/ */
+  margin: 1.8rem 0rem 1rem 1rem;
+}
+
+section:nth-of-type(1n+3) h2 {
+  text-align: center;
+  margin-top: 3.8rem;
 }
 
 section a:hover {
@@ -163,7 +170,7 @@ section:nth-of-type(2) a {
   flex-direction: column;
   width: 92vw;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 0rem;
   padding: 25px 0px 25px 10px;
   text-decoration: none;
   box-shadow: 2px 5px 10px #CDCDCD;
@@ -217,7 +224,6 @@ section figure img {
 section figure figcaption {
   text-align: center;
 }
-
 section article a {
   text-decoration: none;
 }
@@ -234,12 +240,13 @@ section article a figure {
 
 section article a figure img {
   width: 100%;
+  object-fit: cover;
+  height: 210px;
   border-radius: 10px 10px 0px 0px;
 }
 
 section article a figure figcaption {
   padding: 15px;
-  font-size: 1.1em;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -259,7 +266,7 @@ button:focus {
 }
 
 input {
-  width: 97%;
+  width: 89%;
   border: solid 1px #EEEEEE;
   padding: 10px;
   padding-left: 42px;
@@ -296,7 +303,6 @@ input:focus {
 }
 
 .text {
-  font-weight: 700;
   font-style: italic;
   width: 94vw;
   color: White;
@@ -315,7 +321,7 @@ input:focus {
 
 .textp {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.375em;
   text-align: right;
   padding: 20px 20px 20px 50px;
   background-color: #E9631A;
