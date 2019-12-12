@@ -6,7 +6,8 @@
 body {
   font-family: "Myriad", sans-serif;
   font-style: italic;
-  color: #19187C;
+  background-color: White;
+  color: #19197c;
 }
 
 /******************************************************************************
@@ -21,6 +22,7 @@ header {
 header a {
   /* Alle linkjes in de header: */
   color: Black;
+  background-color: White;
 }
 
 header a img {
@@ -124,12 +126,15 @@ header nav ul li ul li:nth-of-type(20) {
                               MOBILE CONTENT index pagina
 *******************************************************************************/
 h1 {
+  /* Alle H1'tjes van de pagina: */
   font-size: 1.9em;
 }
 
 h2:first-of-type {
+  /* Eerste H2'tje van de pagina: */
+  /* BRON: https://css-tricks.com/almanac/selectors/f/first-of-type/ */
   font-weight: 600;
-  margin: 3.8rem 0rem 1rem 1rem;
+  margin: 2rem 0rem 1rem 1rem;
 }
 
 section:nth-of-type(1n+3) h2 {
@@ -138,8 +143,10 @@ section:nth-of-type(1n+3) h2 {
 }
 
 h3 {
+  /* Alle H3'tjes van de pagina */
   margin: 0 auto;
   max-width: 38ch;
+  font-size: 1.000em;
 }
 
 section a {
@@ -154,13 +161,15 @@ section:nth-of-type(2) a {
   font-size: 1.17rem;
   display: flex;
   flex-direction: column;
-  width: 88.5vw;
+  width: 92vw;
   margin: 0 auto;
   margin-top: 1rem;
   padding: 25px 0px 25px 10px;
   text-decoration: none;
   box-shadow: 2px 5px 10px #CDCDCD;
   border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.3em;
 }
 
 section:nth-of-type(1) {
@@ -178,13 +187,14 @@ section:last-of-type {
   flex-direction: column;
 }
 section button {
+  display: block;
   padding: 20px 5px;
-  width: 93%;
-  margin: 1rem;
+  width: 94%;
+  margin: 0 auto;
   border: 1px solid #19187C;
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
   color: #19187C;
 }
 
@@ -194,9 +204,18 @@ section button:hover {
   border: 1px solid #427AC8;
 }
 
+section figure {
+width: 90%;
+margin: 0 auto;
+}
+
 section figure img {
-  width: 95%;
-  margin: 0 auto;
+  /* Afbeeldingen die niet in een section staan: */
+  width: 100%;
+}
+
+section figure figcaption {
+  text-align: center;
 }
 
 section article a {
@@ -204,7 +223,7 @@ section article a {
 }
 
 section article a figure {
-  width: 90%;
+  width: 94%;
   border: 1px solid #EEEEEE;
   margin: 0 auto;
   text-align: center;
@@ -219,8 +238,53 @@ section article a figure img {
 }
 
 section article a figure figcaption {
-  padding: 10px;
+  padding: 15px;
+  font-size: 1.1em;
   border-radius: 0px 0px 10px 10px;
+}
+
+section:nth-child(4) figure figcaption {
+  margin-top: 20px;
+  color: #141240;
+  font-style: normal;
+}
+
+section:nth-child(4) button {
+  width: 30%;
+  margin-top: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  width: 97%;
+  border: solid 1px #EEEEEE;
+  padding: 10px;
+  padding-left: 42px;
+  font-size: 1em;
+  margin-bottom: 200px;
+  border-radius: 5px;
+  background-image: url('/images/searchIcon.png');
+  background-size: 20px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  /* BRON: https://css-tricks.com/almanac/selectors/p/placeholder/ */
+  font-style: italic;
+  opacity: 0.5;
+}
+
+input:focus {
+  /* BRON: https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome*/
+  outline: none;
+  font-weight: 400;
+  color: #333333;
+  border: solid 1px #19187C;
+  padding-right: 20px;
 }
 
 .contentFoto {
@@ -234,7 +298,7 @@ section article a figure figcaption {
 .text {
   font-weight: 700;
   font-style: italic;
-  width: 91vw;
+  width: 94vw;
   color: White;
   position: absolute;
   top: 6.5rem;
@@ -262,6 +326,11 @@ section article a figure figcaption {
                               LAPTOP CONTENT index pagina
 *******************************************************************************/
 @media all and (min-width:768px) {
+
+  input {
+    background-position: right;
+  }
+
   .contentFoto {
     width: 100%;
     height: 420px;
