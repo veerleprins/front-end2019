@@ -132,6 +132,8 @@ h1 {
 
 h2 {
   font-size: 1.8125em;
+  margin-top: 3.8rem;
+  text-align: center;
   font-weight: normal;
 }
 
@@ -143,21 +145,14 @@ h3 {
   font-weight: normal;
 }
 
-
 section a {
   color: #19187C;
 }
 
-
 h2:first-of-type {
   /* Eerste H2'tje van de pagina: */
   /* BRON: https://css-tricks.com/almanac/selectors/f/first-of-type/ */
-  margin: 1.8rem 0rem 1rem 1rem;
-}
-
-section:nth-of-type(1n+3) h2 {
-  text-align: center;
-  margin-top: 3.8rem;
+  margin: 1.8rem 0rem 1rem 0rem;
 }
 
 section a:hover {
@@ -193,6 +188,7 @@ section:last-of-type {
   display: flex;
   flex-direction: column;
 }
+
 section button {
   display: block;
   padding: 20px 5px;
@@ -212,8 +208,8 @@ section button:hover {
 }
 
 section figure {
-width: 90%;
-margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 section figure img {
@@ -224,6 +220,7 @@ section figure img {
 section figure figcaption {
   text-align: center;
 }
+
 section article a {
   text-decoration: none;
 }
@@ -291,7 +288,6 @@ input:focus {
   font-weight: 400;
   color: #333333;
   border: solid 1px #19187C;
-  padding-right: 20px;
 }
 
 .contentFoto {
@@ -333,7 +329,45 @@ input:focus {
 *******************************************************************************/
 @media all and (min-width:768px) {
 
-  input {
+  /*****************************************
+      Sectie 1, 8 <a> buttons:
+  ******************************************/
+
+  section:nth-of-type(2) {
+    /* background-color: green; */
+    padding-bottom: 70px;
+  }
+.wrapper {
+    display: flex;
+    width: 70em;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section:nth-of-type(2) a{
+    width: 22%;
+    margin-top: 20px;
+  }
+
+  /*****************************************
+      Button 'Meer over ons':
+  ******************************************/
+
+  section:nth-child(4) button {
+    width: 10%;
+    padding: 15px 0px 15px 0px;
+  }
+
+  /*****************************************
+        Search Bar onderaan de pagina:
+  ******************************************/
+
+  section:nth-of-type(5) input {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+    padding-left: 15px;
     background-position: right;
   }
 
