@@ -90,6 +90,7 @@ header nav ul li ul li:nth-of-type(20) {
   position: absolute;
   top: 5px;
   right: 0;
+  visibility: visible;
   margin-right: 21px;
 }
 
@@ -120,6 +121,30 @@ header nav ul li ul li:nth-of-type(20) {
     display: block;
     object-fit: cover;
   } */
+
+    header {
+      display: flex;
+      height: auto;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header ul {
+      margin-left: 3rem;
+    }
+
+    section a div.text {
+      width: 30em;
+      right: 11%;
+    }
+
+    .icons1 {
+      visibility: hidden;
+    }
+
+    .icons {
+      right: 9%;
+    }
 }
 
 /******************************************************************************
@@ -207,6 +232,24 @@ section button:hover {
   border: 1px solid #427AC8;
 }
 
+section ul {
+  /* list-style: none; */
+}
+
+section ul li {
+  padding: 20px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+section ul li a {
+  text-decoration: none;
+  font-size: 1.05em;
+}
+
+section ul li:nth-child(3) {
+  margin-bottom: 5em;
+}
+
 section figure {
   width: 90%;
   margin: 0 auto;
@@ -277,7 +320,6 @@ input {
 }
 
 /* Before After atje voor Inputs als bonus: 'More...' links */
-
 input::placeholder {
   /* BRON: https://css-tricks.com/almanac/selectors/p/placeholder/ */
   font-style: italic;
@@ -334,28 +376,27 @@ input:focus {
   /*****************************************
       Sectie 1, 8 <a> buttons:
   ******************************************/
-
   section:nth-of-type(2) {
     /* background-color: green; */
     padding-bottom: 70px;
   }
-.wrapper {
+
+  .wrapper {
     display: flex;
-    width: 70em;
+    width: 80%;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  section:nth-of-type(2) a{
-    width: 22%;
+  section:nth-of-type(2) a {
+    width: 20%;
     margin-top: 20px;
   }
 
   /*****************************************
       Button 'Meer over ons':
   ******************************************/
-
   section:nth-child(4) button {
     width: 10%;
     padding: 15px 0px 15px 0px;
@@ -364,7 +405,6 @@ input:focus {
   /*****************************************
         Search Bar onderaan de pagina:
   ******************************************/
-
   section:nth-of-type(5) input {
     display: block;
     width: 700px;
@@ -379,4 +419,13 @@ input:focus {
     display: block;
     object-fit: cover;
   }
+}
+
+/******************************************************************************
+                              MOBILE FOOTER
+*******************************************************************************/
+footer {
+  margin-top: 4em;
+  padding-top: 4em;
+  border-top: solid 1px #DCDCDC;
 }
