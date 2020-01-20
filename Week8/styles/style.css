@@ -1,0 +1,542 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Myriad", sans-serif;
+    font-style: italic;
+    background-color: White;
+    color: #19197c;
+}
+
+
+/******************************************************************************
+                              MOBILE HEADER
+*******************************************************************************/
+
+header {
+    /* Totale header: */
+    height: 8rem;
+    display: inline-block;
+}
+
+header button {
+  visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+
+header a {
+    /* Alle linkjes in de header: */
+    color: Black;
+}
+
+header a:nth-child(4) {
+    visibility: hidden;
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+    max-width: 3.5em;
+    position: absolute;
+    top: 5px;
+    margin-right: 16em;
+}
+
+header a img {
+    /* Het RABOBANK logo: */
+    margin: 1.5rem 0rem 0rem 0.5rem;
+    max-width: 135px;
+}
+
+header nav {
+    /* De navigatie van de header: */
+    padding: 1rem 0.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0.5rem 2rem 0rem 0rem;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: 0.03rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+header nav ul li ul {
+    z-index: 99999;
+    position: absolute;
+    /* width: 90%; */
+    /*Breedte van dropdown menu, moet nog naar gekeken worden.*/
+    display: none;
+    text-align: left;
+    background-color: White;
+    box-shadow: 5px 10px 20px #888888;
+    /*BRON: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+}
+
+header nav ul li ul li {
+    padding: 0.7rem 0rem;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+header ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    text-align: left;
+}
+
+header nav ul li ul li:nth-of-type(20) {
+    padding-bottom: 10px;
+}
+
+.icons1 {
+    max-width: 18px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    visibility: visible;
+    margin-right: 21px;
+}
+
+.icons {
+    max-width: 18px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin-right: 60px;
+}
+
+.drop {
+    font-weight: bold;
+}
+
+.icons:hover {
+    margin-right: 56px;
+    transition-duration: 250ms;
+}
+
+.dropdownlijst {
+    display: block;
+    position: absolute;
+    top: 98px;
+    left: -5rem;
+    width: 100vw;
+    height: auto;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid #000;
+    padding: 40px;
+}
+
+.rabomenu li:hover .dropdownlijst {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.kolommen {
+    vertical-align: top;
+    width: 200px;
+    margin-right: 1%;
+    padding: 0rem 0rem 2rem 1rem;
+}
+
+.kolommen p {
+    padding: 4px 0;
+    transition: all 0.4s ease;
+}
+
+.kolommen p a {
+    font-size: 0.9rem;
+}
+
+.tussenruimte {
+    margin-left: 3rem;
+}
+
+
+/******************************************************************************
+                              MOBILE CONTENT index pagina
+*******************************************************************************/
+
+h1 {
+    /* Alle H1'tjes van de pagina: */
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8125em;
+    margin-top: 3.8rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+h3 {
+    /* Alle H3'tjes van de pagina */
+    margin: 0 auto;
+    max-width: 38ch;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+section a {
+    color: #19187C;
+}
+
+h2:first-of-type {
+    /* Eerste H2'tje van de pagina: */
+    /* BRON: https://css-tricks.com/almanac/selectors/f/first-of-type/ */
+    margin: 1.8rem 0rem 1rem 0rem;
+}
+
+section a:hover {
+    color: #FD6400;
+}
+
+section:nth-of-type(2) a {
+    font-size: 1.17rem;
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+    margin: 0 auto;
+    margin-top: 0rem;
+    padding: 25px 0px 25px 10px;
+    text-decoration: none;
+    box-shadow: 2px 5px 10px #CDCDCD;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+section:nth-of-type(1) {
+    position: relative;
+}
+
+section:nth-of-type(2) {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+section button {
+    display: block;
+    padding: 20px 5px;
+    width: 94%;
+    margin: 0 auto;
+    border: 1px solid #19187C;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #19187C;
+}
+
+section button:hover {
+    cursor: pointer;
+    color: #427AC8;
+    border: 1px solid #427AC8;
+}
+
+section ul {
+    /* list-style: none; */
+}
+
+section ul li {
+    padding: 20px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+section ul li a {
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+section ul li:nth-child(3) {
+    margin-bottom: 5em;
+}
+
+section figure {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section figure img {
+    /* Afbeeldingen die niet in een section staan: */
+    width: 100%;
+}
+
+section figure figcaption {
+    text-align: center;
+}
+
+section article a {
+    text-decoration: none;
+}
+
+section article a figure {
+    width: 94%;
+    border: 1px solid #EEEEEE;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 6px 6px 9px #CDCDCD;
+    margin-bottom: 30px;
+}
+
+section article a figure img {
+    width: 100%;
+    object-fit: cover;
+    height: 210px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section article a figure figcaption {
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+section:nth-child(4) figure figcaption {
+    margin-top: 20px;
+    color: #141240;
+    font-style: normal;
+}
+
+section:nth-child(4) button {
+    width: 30%;
+    margin-top: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    width: 79%;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    padding-left: 42px;
+    font-size: 1em;
+    margin-bottom: 5em;
+    border-radius: 5px;
+    background-image: url('/images/searchIcon.png');
+    background-size: 20px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+
+/* Before After atje voor Inputs als bonus: 'More...' links */
+
+input::placeholder {
+    /* BRON: https://css-tricks.com/almanac/selectors/p/placeholder/ */
+    font-style: italic;
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+input:focus {
+    /* BRON: https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome*/
+    outline: none;
+    font-weight: 400;
+    color: #333333;
+    border: solid 1px #19187C;
+}
+
+.contentFoto {
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 7rem;
+}
+
+.text {
+    font-style: italic;
+    width: 94vw;
+    color: White;
+    position: absolute;
+    top: 6.5rem;
+    opacity: 95%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.textH1 {
+    padding: 20px 40px 20px 10px;
+    background-color: #302F89;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 0.75rem;
+}
+
+.textp {
+    font-weight: 500;
+    font-size: 1em;
+    text-align: right;
+    padding: 20px 20px 20px 50px;
+    background-color: #E9631A;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/******************************************************************************
+                              MOBILE FOOTER
+*******************************************************************************/
+
+footer {
+    margin-top: 4em;
+    padding-top: 4em;
+    border-top: solid 1px #DCDCDC;
+}
+
+
+/******************************************************************************
+                              LAPTOP HEADER
+*******************************************************************************/
+
+@media all and (min-width:768px) {
+    /* .contentFoto {
+    width: 100%;
+    height: 420px;
+    display: block;
+    object-fit: cover;
+  } */
+    header {
+        display: flex;
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+    header a:nth-child(4) {
+        visibility: visible;
+        padding-top: 1.7rem;
+        width: 30em;
+        right: 9%;
+    }
+    header ul {
+        margin-left: 3rem;
+    }
+    section a div.text {
+        width: 30em;
+        right: 11%;
+    }
+    .icons1 {
+        visibility: hidden;
+    }
+    .icons {
+        max-width: 18px;
+        position: absolute;
+        top: 5px;
+        right: 25%;
+    }
+    .dropdownlijst {
+        display: block;
+        position: absolute;
+        top: 48px;
+        left: -5rem;
+        width: 100vw;
+        height: 300px;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        border-bottom: 1px solid #000;
+        padding: 40px;
+    }
+    .rabomenu li:hover .dropdownlijst {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+    .kolommen {
+        vertical-align: top;
+        width: 230px;
+        display: inline-block;
+        margin-right: 1%;
+    }
+    .kolommen p {
+        padding: 10px 0;
+        transition: all 0.4s ease;
+    }
+    .tussenruimte {
+        margin-left: 19%;
+    }
+}
+
+
+/******************************************************************************
+                              LAPTOP CONTENT index pagina
+*******************************************************************************/
+
+@media all and (min-width:768px) {
+    /*****************************************
+      Sectie 1, 8 <a> buttons:
+  ******************************************/
+    section:nth-of-type(2) {
+        /* background-color: green; */
+        padding-bottom: 70px;
+    }
+    .wrapper {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section:nth-of-type(2) a {
+        width: 20%;
+        margin-top: 20px;
+    }
+    /*****************************************
+      Button 'Meer over ons':
+  ******************************************/
+    section:nth-child(4) button {
+        width: 10%;
+        padding: 15px 0px 15px 0px;
+    }
+    /*****************************************
+        Section Kom maar op met die telefoon
+  ******************************************/
+    /* section:nth-of-type(3) {
+
+    } */
+    section:nth-of-type(3) div {
+        display: flex;
+    }
+    /*****************************************
+        Search Bar onderaan de pagina:
+  ******************************************/
+    section:nth-of-type(5) input {
+        display: block;
+        width: 700px;
+        margin: 0 auto;
+        padding-left: 15px;
+        background-position: right;
+    }
+    .contentFoto {
+        width: 100%;
+        height: 420px;
+        display: block;
+        object-fit: cover;
+    }
+}
