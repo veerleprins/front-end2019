@@ -324,7 +324,7 @@ section article a {
   text-decoration: none;
 }
 
-section article a figure {
+section div article a figure {
   width: 94%;
   border: 1px solid #EEEEEE;
   margin: 0 auto;
@@ -334,14 +334,14 @@ section article a figure {
   margin-bottom: 30px;
 }
 
-section article a figure img {
+section div article a figure img {
   width: 100%;
   object-fit: cover;
   height: 210px;
   border-radius: 10px 10px 0px 0px;
 }
 
-section article a figure figcaption {
+section div article a figure figcaption {
   padding: 15px;
   border-radius: 0px 0px 10px 10px;
 }
@@ -362,7 +362,7 @@ button:focus {
 }
 
 input {
-  width: 50%;
+  width: 86%;
   border: solid 1px #EEEEEE;
   padding: 10px;
   padding-left: 42px;
@@ -559,12 +559,19 @@ footer ul li a i:first-child {
       margin: 0 auto;
   }
 
+  header div ul li:first-child {
+    margin-left: 18.5em;
+  }
+
+  header div ul li:last-child {
+    margin-right: 22em;
+  }
+
   header nav {
     position: absolute;
     top: 30px;
     left: 0;  
     z-index: 100;
-    /* height: 10px; */
     background-color: white;
   }
   header nav a img:first-of-type {
@@ -626,14 +633,14 @@ footer ul li a i:first-child {
     list-style-type: none;
     display: flex;
     margin-top: 1rem; 
-    margin-left: 33vw;
+    margin-left: 25vw;
    }
    
    .text {
      transition: all 0.3s ease;
    }
-
-.text:hover {
+   
+   .text:hover {
   transform: scale(1.1);
 }
 }
@@ -645,7 +652,7 @@ footer ul li a i:first-child {
 @media all and (min-width:768px) {
   section a div.text {
     width: 30em;
-    right: 11%;
+    right: 16em;
 }
   /*****************************************
     Sectie 1, 8 <a> buttons:
@@ -654,13 +661,12 @@ footer ul li a i:first-child {
     padding-top: 110px;
   }
   section:nth-of-type(2) {
-      /* background-color: green; */
       padding-bottom: 70px;
   }
 
   section:nth-of-type(2) div {
       display: flex;
-      width: 80%;
+      width: 70%;
       margin: 0 auto;
       flex-direction: row;
       flex-wrap: wrap;
@@ -695,8 +701,7 @@ footer ul li a i:first-child {
   /*****************************************
       Section Kom maar op met die telefoon
 ******************************************/
-  /* section:nth-of-type(3) {
-  } */
+
   section:nth-of-type(3) div {
       margin: 4rem 0rem;
       display: flex;
@@ -704,6 +709,10 @@ footer ul li a i:first-child {
   }
   section:nth-of-type(3) div article {
     width: 25%;
+  }
+
+  section:nth-of-type(3) div article figcaption {
+    height: 100%;
   }
   /*****************************************
       Search Bar onderaan de pagina:
