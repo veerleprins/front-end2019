@@ -64,7 +64,6 @@ header nav ul {
   list-style-type: none;
   display: flex;
   margin-left: 1rem;
-  /* background-color: hotpink; */
 }
 
 header nav ul li {
@@ -265,17 +264,11 @@ section:nth-of-type(2) a {
   width: 89vw;
   margin: 0 auto;
   padding: 25px 0px 25px 10px;
-  transition: all 0.3s ease;
   text-decoration: none;
   box-shadow: 2px 5px 10px #CDCDCD;
   border-radius: 10px;
   font-weight: 500;
   font-size: 1.3em;
-}
-
-section:nth-of-type(2) a:hover {
-  /* BRON: https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
-  transform: scale(1.1)
 }
 
 section:nth-of-type(1) {
@@ -325,14 +318,6 @@ section figure img {
 
 section figure figcaption {
   text-align: center;
-}
-
-section article {
-  transition: all 0.3s ease;
-}
-
-section article:hover {
-  transform: scale(1.1);
 }
 
 section article a {
@@ -426,10 +411,6 @@ input:focus {
   margin-left: 1rem;
   margin-right: 1rem;
   transition: all 0.3s ease;
-}
-
-.text:hover {
-  transform: scale(1.1);
 }
 
 .textH1 {
@@ -547,7 +528,6 @@ footer ul:nth-child(2) li a:hover {
 }
 
 footer ul li a i {
-/*BRON: https://fontawesome.com/icons?m=free    */
   color: #AAAAAA;
   margin: 1rem 0rem;
 }
@@ -649,6 +629,14 @@ footer ul li a i:first-child {
     margin-top: 1rem; 
     margin-left: 33vw;
    }
+   
+   .text {
+     transition: all 0.3s ease;
+   }
+
+.text:hover {
+  transform: scale(1.1);
+}
 }
 
 /******************************************************************************
@@ -670,6 +658,7 @@ footer ul li a i:first-child {
       /* background-color: green; */
       padding-bottom: 70px;
   }
+
   section:nth-of-type(2) div {
       display: flex;
       width: 80%;
@@ -680,7 +669,22 @@ footer ul li a i:first-child {
   section:nth-of-type(2) a {
       width: 20%;
       margin-top: 20px;
+      transition: all 0.3s ease;
   }
+
+  section:nth-of-type(2) a:hover {
+    /* BRON: https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+    transform: scale(1.1)
+  }
+
+  section article {
+    transition: all 0.3s ease;
+  }
+  
+  section article:hover {
+    transform: scale(1.1);
+  }
+  
  
   /*****************************************
     Button 'Meer over ons':
