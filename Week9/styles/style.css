@@ -410,7 +410,6 @@ input:focus {
   opacity: 95%;
   margin-left: 1rem;
   margin-right: 1rem;
-  transition: all 0.3s ease;
 }
 
 .textH1 {
