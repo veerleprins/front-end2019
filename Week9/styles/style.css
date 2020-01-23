@@ -362,7 +362,7 @@ button:focus {
 }
 
 input {
-  width: 10%;
+  width: 400px;
   border: solid 1px #EEEEEE;
   padding: 10px;
   padding-left: 42px;
@@ -719,7 +719,7 @@ footer ul li a i:first-child {
 ******************************************/
   section:nth-of-type(5) input {
       display: block;
-      width: 700px;
+      width: 500px;
       margin: 0 auto;
       padding-left: 15px;
       background-position: right;
