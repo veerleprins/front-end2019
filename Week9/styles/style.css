@@ -494,7 +494,7 @@ footer ul li a {
   text-decoration: none;
 }
 
-footer ul:first-child li {
+footer nav ul:first-child li {
   margin-bottom: 0.5em;
 }
 
@@ -729,5 +729,16 @@ footer ul li a i:first-child {
       height: 420px;
       display: block;
       object-fit: cover;
+  }
+}
+
+
+/******************************************************************************
+                            LAPTOP FOOTER
+*******************************************************************************/
+
+@media all and (min-width:768px) {
+  footer nav ul li {
+    display: inline-block;
   }
 }
