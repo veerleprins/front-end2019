@@ -362,7 +362,7 @@ button:focus {
 }
 
 input {
-  width: 86%;
+  width: 50%;
   border: solid 1px #EEEEEE;
   padding: 10px;
   padding-left: 42px;
@@ -736,9 +736,3 @@ footer ul li a i:first-child {
 /******************************************************************************
                             LAPTOP FOOTER
 *******************************************************************************/
-
-@media all and (min-width:768px) {
-  footer nav ul li {
-    display: inline-block;
-  }
-}
