@@ -362,7 +362,7 @@ button:focus {
 }
 
 input {
-  width: 80%;
+  width: 50%;
   border: solid 1px #EEEEEE;
   padding: 10px;
   padding-left: 42px;
